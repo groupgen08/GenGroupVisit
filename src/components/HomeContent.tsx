@@ -82,7 +82,6 @@ export default function HomeContent() {
             <div className="relative h-64 md:h-full min-h-[300px] rounded-xl overflow-hidden">
               <img
                 src="/images/team.jpg"
-                //src="https://images.pexels.com/photos/5966431/pexels-photo-5966431.jpeg?auto=compress&cs=tinysrgb&w=800"
                 alt="Banana greenhouse"
                 className="absolute inset-0 w-full h-full object-cover"
               />

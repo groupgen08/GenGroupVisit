@@ -39,7 +39,7 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-12 mb-16">
           <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl">
             <img
-              src="https://images.pexels.com/photos/1595104/pexels-photo-1595104.jpeg?auto=compress&cs=tinysrgb&w=800"
+              src='/images/tractor.jpeg'
               alt="GENGROUP Turkey production complex"
               className="w-full h-full object-cover"
             />
