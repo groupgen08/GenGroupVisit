@@ -1,5 +1,4 @@
 import { ArrowRight } from 'lucide-react';
-import vegateblesImage from '../../public/images/vegetables.webp';
 
 export default function Hero() {
   const scrollToSection = (id: string) => {
