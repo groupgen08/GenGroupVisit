@@ -71,7 +71,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="font-semibold text-gray-900 mb-1">Адрес офиса</div>
-                    <div className="text-gray-600">г. Алматы, ул. Бегалина, д. 11</div>
+                    <div className="text-gray-600">г. Алматы, ул. Азербаева, д. 67</div>
                   </div>
                 </div>
 
@@ -109,7 +109,7 @@ export default function Contact() {
 
             <div className="bg-white rounded-2xl overflow-hidden shadow-md h-80">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.5744739363385!2d76.9225!3d43.2567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDE1JzI0LjEiTiA3NsKwNTUnMjEuMCJF!5e0!3m2!1sen!2skz!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d726.9284744868486!2d76.95222583865487!3d43.21548981899937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836f12a290ba0f%3A0x8ee9abfb87f27a25!2z0JDQt9C10YDQsdCw0LXQstCwINGD0LsuIDY3LCDQkNC70LzQsNGC0YsgMDUwMDQw!5e0!3m2!1sru!2skz!4v1759840003294!5m2!1sru!2skz"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

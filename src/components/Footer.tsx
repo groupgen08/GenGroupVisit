@@ -22,7 +22,7 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
-                <span className="text-sm">г. Алматы, ул. Бегалина, д. 11</span>
+                <span className="text-sm">г. Алматы, ул. Азербаева, д. 67</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-green-500 flex-shrink-0" />

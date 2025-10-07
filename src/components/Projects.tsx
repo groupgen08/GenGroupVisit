@@ -9,7 +9,8 @@ export default function Projects() {
       investment: '$4 млн',
       status: 'Действующий',
       harvest: '500+ тонн',
-      image: 'https://images.pexels.com/photos/5966431/pexels-photo-5966431.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: './src/assets/images/bananas.jpg',
+      //image: 'https://images.pexels.com/photos/5966431/pexels-photo-5966431.jpeg?auto=compress&cs=tinysrgb&w=800',
       icon: Banana,
       color: 'yellow',
       details: [
@@ -28,7 +29,8 @@ export default function Projects() {
       investment: 'Не раскрыто',
       status: 'Развивается',
       harvest: '9 тонн → 30 тонн',
-      image: 'https://images.pexels.com/photos/1132047/pexels-photo-1132047.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: './src/assets/images/blueberry.jpg',
+      //image: 'https://images.pexels.com/photos/1132047/pexels-photo-1132047.jpeg?auto=compress&cs=tinysrgb&w=800',
       icon: Cherry,
       color: 'blue',
       details: [
