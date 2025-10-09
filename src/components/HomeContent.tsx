@@ -1,46 +1,30 @@
-import { TrendingUp, Thermometer, Droplets, BarChart3, Target, Globe } from 'lucide-react';
+import { Thermometer, Droplets, BarChart3, Target, Globe } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
+import { useState } from 'react';
+
+type Stat = { value: string; unit: string; label: string };
+
+type Feature = { title: string; description: string; };
+const featureIcons = [Thermometer, Droplets, BarChart3, Target]; // иконки в коде
 
 export default function HomeContent() {
-  const stats = [
-    { value: '5.3', unit: 'гектара', label: 'Крупнейший банановый комплекс' },
-    { value: '500+', unit: 'тонн', label: 'Второй урожай бананов' },
-    { value: '4.4', unit: 'млрд ₸', label: 'Выручка в 2024 году' },
-    { value: '$4', unit: 'млн', label: 'Инвестиции в проект' }
-  ];
 
-  const features = [
-    {
-      icon: Thermometer,
-      title: 'Климат-контроль',
-      description: 'Современная система управления микроклиматом обеспечивает идеальные условия круглый год'
-    },
-    {
-      icon: Droplets,
-      title: 'Капельное орошение',
-      description: 'Автоматизированная система адаптивного питания и полива для максимальной эффективности'
-    },
-    {
-      icon: BarChart3,
-      title: 'Масштабирование',
-      description: 'Расширение теплицы до 10.3 га позволит производить 1000 тонн бананов ежегодно'
-    },
-    {
-      icon: Target,
-      title: 'Рыночный потенциал',
-      description: 'Возможность покрыть 20-25% внутреннего рынка Казахстана при полном масштабировании'
-    }
-  ];
+  const { t, i18n } = useTranslation();
+  const [lang, setLang] = useState<string>(i18n.language || 'ru');
+
+  // Получаем массив объектов из переводов
+  const stats = t('homeContent.stats', { returnObjects: true }) as Stat[];
+  const features = t('homeContent.features', { returnObjects: true }) as Feature[];
 
   return (
     <div className="bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Инновации в тепличном производстве
+            {t('homeContent.section_title')}
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Gen Group Kazakhstan реализует современные тепличные проекты по выращиванию фруктов и ягод,
-            применяя передовые технологии и международный опыт
+            {t('homeContent.lead')}
           </p>
         </div>
 
@@ -67,16 +51,13 @@ export default function HomeContent() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-3xl font-bold text-gray-900 mb-4">
-                Первый в Казахстане банановый комплекс промышленного масштаба
+                {t('homeContent.banana_headline')}
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4">
-                Наша теплица площадью 5.3 гектара в Туркестанской области не имеет аналогов в стране.
-                Через 6-9 месяцев после посадки мы получили сотни тонн урожая: первый сбор составил
-                около 385 тонн бананов, а второй урожай превысил 500 тонн.
+                {t('homeContent.banana_description')}
               </p>
               <p className="text-gray-700 leading-relaxed">
-                Теплица оснащена системой климат-контроля и адаптивного питания, что обеспечивает
-                высокое качество и круглогодичное производство продукции.
+                {t('homeContent.banana_notes')}
               </p>
             </div>
             <div className="relative h-64 md:h-full min-h-[300px] rounded-xl overflow-hidden">
@@ -91,23 +72,27 @@ export default function HomeContent() {
 
         <div className="mb-20">
           <h3 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-            Наши технологии
+            {t('homeContent.our_technologies')}
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {features.map((feature, index) => (
-              <div
-                key={index}
-                className="bg-white border border-gray-200 p-6 rounded-xl hover:shadow-lg transition-shadow"
-              >
-                <feature.icon className="w-12 h-12 text-green-600 mb-4" />
-                <h4 className="text-lg font-semibold text-gray-900 mb-2">
-                  {feature.title}
-                </h4>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  {feature.description}
-                </p>
-              </div>
-            ))}
+            {features.map((feature, index) => {
+                const Icon = featureIcons[index]; // сопоставляем иконку по порядку
+                return (
+                    <div
+                        key={index}
+                        className="bg-white border border-gray-200 p-6 rounded-xl hover:shadow-lg transition-shadow"
+                    >
+                    <Icon className="w-12 h-12 text-green-600 mb-4" />
+                    <h4 className="text-lg font-semibold text-gray-900 mb-2">
+                        {feature.title}
+                    </h4>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                        {feature.description}
+                    </p>
+                    </div>
+                )
+            }
+            )}
           </div>
         </div>
 
@@ -115,24 +100,23 @@ export default function HomeContent() {
           <div className="max-w-4xl mx-auto text-center">
             <Globe className="w-16 h-16 mx-auto mb-6 opacity-90" />
             <h3 className="text-3xl font-bold mb-4">
-              Рост и потенциал компании
+              {t('homeContent.growth_potential')}
             </h3>
             <p className="text-lg mb-6 text-green-50">
-              Выручка компании выросла с 0,9 млрд тенге в 2022 году до 4,4 млрд в 2024.
-              Это подтверждает динамику развития и эффективность наших проектов.
+              {t('homeContent.revenue_growth')}
             </p>
             <div className="grid md:grid-cols-3 gap-6 mt-8">
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
                 <div className="text-2xl font-bold mb-1">1%</div>
-                <div className="text-sm text-green-100">Текущая доля рынка</div>
+                <div className="text-sm text-green-100">{t('homeContent.current_market_share')}</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
                 <div className="text-2xl font-bold mb-1">20-25%</div>
-                <div className="text-sm text-green-100">Потенциал после расширения</div>
+                <div className="text-sm text-green-100">{t('homeContent.post_expansion_potential')}</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
                 <div className="text-2xl font-bold mb-1">100k</div>
-                <div className="text-sm text-green-100">Тонн импорта ежегодно</div>
+                <div className="text-sm text-green-100">{t('homeContent.annual_import_tons')}</div>
               </div>
             </div>
           </div>

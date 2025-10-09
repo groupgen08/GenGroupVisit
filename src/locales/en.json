@@ -1,0 +1,201 @@
+{
+  "header": {
+    "brand": "Gen Group Kazakhstan",
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contacts",
+    "connect": "Contact Us",
+    "lang_ru": "RU",
+    "lang_en": "EN"
+  },
+
+"hero": {
+    "title": "Growing the Future",
+    "subtitle": "on the ancient land of Southern Kazakhstan",
+    "description": "A leader in greenhouse technologies with innovative solutions for sustainable development of the agricultural sector",
+    "projects_button": "Our Projects",
+    "learn_more": "Learn More"
+  },
+
+  "homeContent": {
+    "stats": [
+      { "value": "5.3", "unit": "hectares", "label": "Largest banana complex" },
+      { "value": "500+", "unit": "tons", "label": "Second banana harvest" },
+      { "value": "4.4", "unit": "billion KZT", "label": "Revenue in 2024" },
+      { "value": "$4", "unit": "million", "label": "Investment in the project" }
+    ],
+
+    "features": [
+      {
+        "title": "Climate Control",
+        "description": "A modern microclimate management system ensures ideal conditions year-round"
+      },
+      {
+        "title": "Drip Irrigation",
+        "description": "Automated adaptive feeding and irrigation system for maximum efficiency"
+      },
+      {
+        "title": "Scalability",
+        "description": "Expanding the greenhouse to 10.3 ha will enable production of 1,000 tons of bananas annually"
+      },
+      {
+        "title": "Market Potential",
+        "description": "Potential to cover 20–25% of Kazakhstan's domestic market at full scale"
+      }
+    ],
+
+    "section_title": "Innovation in Greenhouse Production",
+    "lead": "Gen Group Kazakhstan implements modern greenhouse projects for growing fruits and berries, applying advanced technologies and international expertise",
+    "banana_headline": "Kazakhstan's first industrial-scale banana complex",
+    "banana_description": "Our 5.3-hectare greenhouse in Turkestan region is unique in the country. Within 6–9 months after planting we harvested hundreds of tons: the first harvest was about 385 tons of bananas, and the second harvest exceeded 500 tons.",
+    "banana_notes": "The greenhouse is equipped with climate control and adaptive feeding systems, ensuring high quality and year-round production.",
+    "our_technologies": "Our Technologies",
+    "growth_potential": "Company Growth & Potential",
+    "revenue_growth": "Company revenue grew from 0.9 billion KZT in 2022 to 4.4 billion KZT in 2024. This confirms the development dynamics and effectiveness of our projects.",
+    "current_market_share": "Current market share",
+    "post_expansion_potential": "Potential after expansion",
+    "annual_import_tons": "Tons imported annually"
+  },
+
+  "about": {
+    "title": "About",
+    "lead": "A subsidiary of the Turkish GENGROUP, applying international experience and innovation",
+    "production_complex": "GENGROUP production complex in Turkey",
+    "mission_title": "Our Mission",
+    "mission": "Gen Group Kazakhstan was founded in 2022 as a subsidiary of the Turkish GENGROUP. We apply the technologies of our affiliated companies to build a sustainable and efficient agribusiness.",
+    "leadership": "Under the leadership of CEO and founder Sabyrzhan Uteshev, our team of experts implements innovations, including acclimatization of lemons and dates to new climatic conditions.",
+    "billion_kzt": "billion KZT",
+    "revenue_label": "Revenue Growth",
+    "revenue_explain": "Demonstrates the development dynamics and effectiveness of our projects",
+    "affiliates_title": "Our Affiliates",
+    "history_title": "History & Milestones",
+    "team_title": "Expert Team",
+    "team_description": "Our team combines the international experience of the Turkish GENGROUP with deep understanding of the local market and climatic conditions of Kazakhstan. We demonstrate the ability to adapt and cultivate exotic crops, opening new opportunities for the region.",
+
+    "affiliates": [
+      { "name": "Greencon", "description": "Greenhouse systems" },
+      { "name": "Genfog", "description": "Irrigation and climate systems" },
+      { "name": "Genseed", "description": "Seed breeding and selection" }
+    ],
+
+    "milestones": [
+      { "year": "2022", "event": "Company founded", "detail": "Launch in Kazakhstan" },
+      { "year": "2023", "event": "Greenhouse complex launched", "detail": "5.3 ha for bananas" },
+      { "year": "2024", "event": "First harvests", "detail": "500+ tons of bananas" },
+      { "year": "2025+", "event": "Expansion", "detail": "New crops and scaling" }
+    ]
+  },
+
+  "projects": {
+    "title": "Our Projects",
+    "lead": "Completed and planned projects using modern greenhouse technologies",
+    "labels": {
+      "area": "Area",
+      "harvest": "Harvest",
+      "investment": "Investment",
+      "location": "Location",
+      "current_crops": "Current crops",
+      "future_projects": "Future projects",
+      "tech_advantage": "Technological advantage",
+      "modern_systems": "All Gen Group greenhouses are equipped with automation and modern irrigation systems, ensuring a stable harvest and allowing for rapid scaling of production.",
+      "roi": "Investment efficiency",
+      "payback": "Fast payback",
+      "year_round": "Year-round production",
+      "season_independence": "Independence from seasonality"
+    },
+
+    "mainProjects": [
+      {
+        "title": "Banana Greenhouse Complex",
+        "location": "Turkestan region",
+        "area": "5.3 hectares",
+        "investment": "$4 million",
+        "status": "Operational",
+        "harvest": "500+ tons",
+        "image": "/images/bananas.jpg",
+        "details": [
+          "The first industrial-scale project of this kind in Kazakhstan",
+          "Construction completed in 2023",
+          "Climate control and adaptive feeding system",
+          "Specially adapted banana variety",
+          "First harvest: ~385 tons, second: 500+ tons",
+          "Planned expansion by another 5 ha"
+        ]
+      },
+      {
+        "title": "Blueberry Cultivation",
+        "location": "Southern Kazakhstan",
+        "area": "3 hectares",
+        "investment": "Not disclosed",
+        "status": "In development",
+        "harvest": "9 tons → 30 tons",
+        "image": "/images/blueberry.jpg",
+        "details": [
+          "Use of foreign technologies",
+          "First year: 9 tons of berries",
+          "Plans to increase to 30 tons",
+          "Unique experience for the region",
+          "Export prospects",
+          "High market demand"
+        ]
+      }
+    ],
+
+    "currentCrops": [
+      { "name": "Tomatoes", "color": "red" },
+      { "name": "Strawberries", "color": "red" },
+      { "name": "Bananas", "color": "yellow" },
+      { "name": "Blueberries", "color": "blue" }
+    ],
+
+    "futurePlans": [
+      { "name": "Mango", "description": "Launch in the coming years" },
+      { "name": "Avocado", "description": "Promising crop" },
+      { "name": "Banana greenhouse expansion", "description": "Up to 10.3 ha, 1,000 tons/year" }
+    ],
+
+    "tech_advantage_text": "All Gen Group greenhouses are equipped with automation and modern irrigation systems, ensuring stable yields and enabling rapid production scaling.",
+    "roi_text": "Investment efficiency",
+    "payback_text": "Fast payback",
+    "year_round_text": "Year-round production",
+    "season_independence_text": "Independence from seasonality"
+  },
+
+  "contact": {
+    "form": {
+      "fill_all_fields": "Please fill in all fields.",
+      "send_error": "An error occurred while sending. Please try again later.",
+      "connection_error": "Connection error. Please check your internet or try again later."
+    },
+    "title": "Contact",
+    "subtitle": "We are open to dialogue with investors and partners",
+    "reach_us": "Get in touch",
+    "office_address_label": "Office address",
+    "office_address": "Almaty, Azerbaev St., 67",
+    "phone_label": "Phone",
+    "contact_form_title": "Contact form",
+    "sent_success_title": "Message sent!",
+    "sent_success_text": "We will contact you shortly.",
+    "send_error_title": "Sending error",
+    "your_name": "Your name",
+    "your_name_placeholder": "John Jones",
+    "email_placeholder": "john@example.com",
+    "message_label": "Message",
+    "tell_us": "Tell us about your interest in collaborating...",
+    "sending": "Sending...",
+    "send_button": "Send message",
+    "guarantee": "We guarantee a prompt response to investor inquiries"
+  },
+
+  "footer": {
+    "lead": "A leader in greenhouse technologies of Southern Kazakhstan. Growing the future with innovative solutions.",
+    "contacts_title": "Contact information",
+    "address": "Almaty, Azerbaev St., 67",
+    "our_technologies": "Our technologies",
+    "greencon": "Greencon - greenhouse systems",
+    "genfog": "Genfog - irrigation and climate systems",
+    "genseed": "Genseed - seed breeding and selection",
+    "copyright": "All rights reserved."
+  }
+}
