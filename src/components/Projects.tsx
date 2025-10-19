@@ -1,4 +1,4 @@
-import { Banana, Cherry, Sprout, Apple, TrendingUp, DollarSign, Calendar } from 'lucide-react';
+import { Sprout, TrendingUp, DollarSign, Calendar } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
 
@@ -24,11 +24,16 @@ type FuturePlan = {
 }
 
 const mainProjectsMeta = [
-  { icon: Banana, color: 'yellow' },
-  { icon: Cherry, color: 'blue' }
+  { icon: '/images/crops/banana.svg', color: 'yellow' },
+  { icon: '/images/crops/blueberry.svg', color: 'blue' }
 ];
 
-const currentCropsIcons = [Apple, Cherry, Banana, Cherry];
+const currentCropsMeta = [
+  { icon: '/images/crops/tomato.svg', color: 'red' },
+  { icon: '/images/crops/strawberry.svg', color: 'red' },
+  { icon: '/images/crops/banana.svg', color: 'yellow' },
+  { icon: '/images/crops/blueberry.svg', color: 'blue' },
+];
 
 export default function Projects() {
 
@@ -40,19 +45,6 @@ export default function Projects() {
   const currentCrops = t('projects.currentCrops', { returnObjects: true }) as CurrentCrop[];
 
   const futurePlans = t('projects.futurePlans', { returnObjects: true }) as FuturePlan[];
-
-//   const currentCrops = [
-//     { name: 'Томаты', icon: Apple, color: 'red' },
-//     { name: 'Клубника', icon: Cherry, color: 'red' },
-//     { name: 'Бананы', icon: Banana, color: 'yellow' },
-//     { name: 'Голубика', icon: Cherry, color: 'blue' }
-//   ];
-
-//   const futurePlans = [
-//     { name: 'Манго', description: 'Запуск в ближайшие годы' },
-//     { name: 'Авокадо', description: 'Перспективная культура' },
-//     { name: 'Расширение банановой теплицы', description: 'До 10.3 га, 1000 тонн/год' }
-//   ];
 
   const getColorClasses = (color: string) => {
     const colors: Record<string, { bg: string; text: string; border: string }> = {
@@ -77,7 +69,7 @@ export default function Projects() {
         <div className="space-y-12 mb-20">
           {mainProjects.map((project, index) => {
 
-            const Icon = mainProjectsMeta[index].icon;
+            const iconSrc = mainProjectsMeta[index].icon;
 
             return (
                 <div
@@ -87,9 +79,9 @@ export default function Projects() {
                     <div className="grid lg:grid-cols-2 gap-8">
                     <div className={`${index % 2 === 0 ? 'order-1' : 'order-2'} relative h-80 lg:h-auto`}>
                         <img
-                        src={project.image}
-                        alt={project.title}
-                        className="w-full h-full object-cover"
+                            src={project.image}
+                            alt={project.title}
+                            className="w-full h-full object-cover"
                         />
                         <div className="absolute top-4 left-4">
                         <span className="bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold text-gray-900">
@@ -100,8 +92,12 @@ export default function Projects() {
 
                     <div className={`${index % 2 === 0 ? 'order-2' : 'order-1'} p-8 lg:p-12 flex flex-col justify-center`}>
                         <div className="flex items-center space-x-3 mb-4">
-                        <Icon className={`w-10 h-10 ${getColorClasses(mainProjectsMeta[index].color).text}`} />
-                        <h3 className="text-3xl font-bold text-gray-900">{project.title}</h3>
+                            <img
+                                src={iconSrc}
+                                // alt={crop.name}
+                                className={`w-10 h-10 ${getColorClasses(mainProjectsMeta[index].color).text}`}
+                            />
+                            <h3 className="text-3xl font-bold text-gray-900">{project.title}</h3>
                         </div>
 
                         <div className="grid grid-cols-2 gap-4 mb-6">
@@ -139,25 +135,29 @@ export default function Projects() {
         </div>
 
         <div className="mb-20">
-          <h3 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+            <h3 className="text-3xl font-bold text-gray-900 mb-8 text-center">
             {t('projects.labels.current_crops')}
-          </h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            </h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {currentCrops.map((crop, index) => {
 
-                const Icon = currentCropsIcons[index];
+                const iconSrc = currentCropsMeta[index].icon;
 
                 return (
                     <div
                         key={index}
-                        className={`${getColorClasses(crop.color).bg} border ${getColorClasses(crop.color).border} rounded-xl p-6 text-center hover:shadow-md transition-shadow`}
+                        className={`${getColorClasses(currentCropsMeta[index].color).bg} border ${getColorClasses(currentCropsMeta[index].color).border} rounded-xl p-6 text-center hover:shadow-md transition-shadow`}
                     >
-                        <Icon className={`w-12 h-12 ${getColorClasses(crop.color).text} mx-auto mb-3`} />
+                        <img
+                            src={iconSrc}
+                            alt={crop.name}
+                            className={`w-12 h-12 ${getColorClasses(currentCropsMeta[index].color).text} mx-auto mb-3`}
+                        />
                         <div className="font-semibold text-gray-900">{crop.name}</div>
                     </div>
                 )
             })}
-          </div>
+            </div>
         </div>
 
         <div className="bg-gradient-to-br from-green-600 to-green-700 rounded-2xl p-8 md:p-12">

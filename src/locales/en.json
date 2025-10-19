@@ -18,12 +18,12 @@
     "learn_more": "Learn More"
   },
 
-  "homeContent": {
+"homeContent": {
     "stats": [
-      { "value": "5.3", "unit": "hectares", "label": "Largest banana complex" },
-      { "value": "500+", "unit": "tons", "label": "Second banana harvest" },
+      { "value": "90", "unit": "hectares", "label": "The largest industrial greenhouse" },
+      { "value": "18.000", "unit": "tons", "label": "Total harvest" },
       { "value": "4.4", "unit": "billion KZT", "label": "Revenue in 2024" },
-      { "value": "$4", "unit": "million", "label": "Investment in the project" }
+      { "value": "$108", "unit": "million", "label": "Investment in the project" }
     ],
 
     "features": [
@@ -36,19 +36,41 @@
         "description": "Automated adaptive feeding and irrigation system for maximum efficiency"
       },
       {
-        "title": "Scalability",
-        "description": "Expanding the greenhouse to 10.3 ha will enable production of 1,000 tons of bananas annually"
-      },
-      {
         "title": "Market Potential",
         "description": "Potential to cover 20–25% of Kazakhstan's domestic market at full scale"
       }
     ],
 
+    "scaling_title": "Scalability",
+    "scalingStages": [
+        {
+            "id": "stage-5",
+            "hectares": "5",
+            "title": "Initial stage",
+            "production": "≈1000 tons/year",
+            "description": "Initial scale: technology validation, process optimization and initial commercial deliveries."
+        },
+        {
+            "id": "stage-12",
+            "hectares": "12",
+            "title": "Development",
+            "production": "≈2.400 tons/year",
+            "description": "Intermediate phase — increasing production volume and expanding sales channels."
+        },
+        {
+            "id": "stage-90",
+            "hectares": "90",
+            "title": "Full rollout",
+            "production": "≈18.000 tons/year",
+            "description": "Full-scale deployment with investment — significant domestic market coverage and export potential."
+        }
+    ],
+    "scalingStagesHectares": "ha",
+
     "section_title": "Innovation in Greenhouse Production",
     "lead": "Gen Group Kazakhstan implements modern greenhouse projects for growing fruits and berries, applying advanced technologies and international expertise",
     "banana_headline": "Kazakhstan's first industrial-scale banana complex",
-    "banana_description": "Our 5.3-hectare greenhouse in Turkestan region is unique in the country. Within 6–9 months after planting we harvested hundreds of tons: the first harvest was about 385 tons of bananas, and the second harvest exceeded 500 tons.",
+    "banana_description": "Our 90-hectare greenhouses in Turkestan region are unique in the country. Within 6–9 months after planting we harvested hundreds of tons: the first harvest was about 385 tons of bananas, and the second harvest exceeded 500 tons.",
     "banana_notes": "The greenhouse is equipped with climate control and adaptive feeding systems, ensuring high quality and year-round production.",
     "our_technologies": "Our Technologies",
     "growth_potential": "Company Growth & Potential",

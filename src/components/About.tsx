@@ -15,13 +15,6 @@ export default function About() {
   const affiliates = t('about.affiliates', { returnObjects: true }) as Affiliate[];
   const milestones = t('about.milestones', { returnObjects: true }) as Milestone[];
 
-//   const milestones = [
-//     { year: '2022', event: 'Основание компании', detail: 'Старт в Казахстане' },
-//     { year: '2023', event: 'Запуск тепличного комплекса', detail: '5.3 га для бананов' },
-//     { year: '2024', event: 'Первые урожаи', detail: '500+ тонн бананов' },
-//     { year: '2025+', event: 'Расширение', detail: 'Новые культуры и масштабирование' }
-//   ];
-
   return (
     <section id="about" className="bg-gray-50 py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
